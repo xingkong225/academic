@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* 重置样式 */
+* { margin: 0; padding: 0; }
+em { font-style: normal; }
+li { list-style: none; }
+a { text-decoration: none; }
+img { border: none; vertical-align: top; }
+input, textarea { outline: none; text-decoration: none; }
+body { font-family: "微软雅黑"; font-size: 14px; background: #f6f6f6; }
+/* 公共样式 */
+.fl { float: left; }
+.fr { float: right; }
+.clear { zoom: 1; }
+.clear:after { content: ""; display: block; clear: both; }
+
+#header { width: 1200px; margin: 0 auto; overflow: hidden; }
+.wrap1 { width: 100%; background: #fff; overflow: hidden; }
+#header .img { width: 438px; height: 74px; float: left; }
+#header .img a { display: inline-block; width: 438px; height: 74px; }
+#header .img img { width: 438px; height: 74px; }
+#header .main_nav { float: left; padding: 22px 0 0 0px; }
+#header .main_nav li { float: left; margin-left: 45px; }
+#header .main_nav a { color: #333; line-height: 20px; }
+#header .main_nav li:hover * { color: #0068b7; }
+#header .main_nav span { font-size: 10px; color: #777; }
+#header .form { width: 176px; display: block; float: right; position: relative; margin-top: 24px; }
+#header .text { width: 166px; height: 26px; line-height: 26px; color: #999; padding-left: 8px; border: 1px solid #bfbfbf; position: absolute; top: 0; left: 0; }
+#header .submit { border: none; width: 26px; height: 26px; position: absolute; top: 1px; right: 1px; cursor: pointer; background: url(../img/index_img/btn_bg.jpg) no-repeat 0 0; }
+
+#footer { width: 1200px; height: 132px; margin: 0 auto; }
+.wrap2 { width: 100%; background: #0068b7; }
+#footer .text { width: 438px; }
+#footer .text p { color: #fff; line-height: 24px; padding-top: 46px; }
+#footer .text p span { padding-left: 21px; }
+#footer .link {}
+#footer .link p { color: #fff; text-align: right; line-height: 24px; font-weight: bold; font-size: 16px; padding-top: 24px; }
+#footer .link a { display: inline-block; width: 114px; text-align: right; color: #fff; line-height: 24px; }
+#footer .link a:hover { text-decoration: underline; }
+
+#content { width: 1200px; height: 511px; margin: 0 auto; margin-top: 45px; margin-bottom: 72px; }
+.tab_left {}
+.tab_left ul {}
+.tab_left ul li { width: 174px; height: 40px; background: #fff; border: 1px solid #dcdcdc; margin-bottom: -1px; }
+.tab_left ul a { display: inline-block; width: 174px; height: 40px; color: #0068b7; text-align: center; line-height: 40px; }
+.tab_left ul li.active { background: #0068b7; }
+.tab_left ul li.active a { color: #fff; }
+.tab_left ul li:hover { background: #0068b7; }
+.tab_left ul li a:hover { color: #fff; }
+
+
+#content .tab_right .xuan { display: none; }
+#content .tab_right .active { display: block; }
+.intro { width: 966px; height: 508px; border: 1px solid #dcdcdc; background: #fff; position: relative; padding: 0 15px; }
+.intro p { height: 33px; line-height: 33px; border-bottom: 1px solid #dcdcdc; color: #888; }
+
+.ruzhu { width: 966px; height: 508px; border: 1px solid #dcdcdc; background: #fff; padding: 0 15px; }
+
+.intro .con { padding-top: 13px; }
+.intro .con li { height: 23px; padding-left: 9px; position: relative; line-height: 23px; margin-bottom: 10px; border-bottom: 1px dotted #ececec; box-shadow: 0 1px #f8f8f8; }
+.intro .con li a { color: #333; }
+.intro .con li a:hover { text-decoration: underline; }
+.intro .con li span { color: #777; font-size: 12px; position: absolute; right: 0; }
+
+.buttons { width: 480px; position: absolute; right: 0; bottom: 46px; }
+.buttons .page { float: left; }
+.buttons .form { width: 164px; float: left; margin-left: 12px; }
+.buttons .page span { display: inline-block; float: left; cursor: pointer; margin-right: 8px; color: #555; background: #eee; text-align: center; line-height: 25px; }
+.buttons .page span:hover { color: #fff; background: #0068b7; }
+.buttons .page span.pub { width: 30px; height: 25px; }
+.buttons .page span.shou { width: 40px; height: 25px; }
+.buttons .page span.active { color: #fff; background: #0068b7; }
+.buttons .link { padding-right: 7px; height: 25px; float: left; line-height: 25px; color: #555; }
+.buttons .text { width: 53px; height: 23px; padding-left: 10px; float: left; color: #777; border: 1px solid #eee; margin-right: -1px; }
+.buttons .submit { width: 34px; height: 25px; float: left; cursor: pointer; border: 1px solid #eee; background: url(../img/list_img/btn_bg.jpg) no-repeat 0 0; }
+

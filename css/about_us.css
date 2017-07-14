@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* 重置样式 */
+* { margin: 0; padding: 0; }
+em { font-style: normal; }
+li { list-style: none; }
+a { text-decoration: none; }
+img { border: none; vertical-align: top; }
+input, textarea { outline: none; text-decoration: none; }
+body { font-family: "微软雅黑"; font-size: 14px; background: #f6f6f6; }
+/* 公共样式 */
+.fl { float: left; }
+.fr { float: right; }
+.clear { zoom: 1; }
+.clear:after { content: ""; display: block; clear: both; }
+
+#header { width: 1200px; margin: 0 auto; overflow: hidden; }
+.wrap1 { width: 100%; background: #fff; overflow: hidden; }
+#header .img { width: 438px; height: 74px; float: left; }
+#header .img a { display: inline-block; width: 438px; height: 74px; }
+#header .img img { width: 438px; height: 74px; }
+#header .main_nav { float: left; padding: 22px 0 0 0px; }
+#header .main_nav li { float: left; margin-left: 45px; }
+#header .main_nav a { color: #333; line-height: 20px; }
+#header .main_nav li:hover * { color: #0068b7; }
+#header .main_nav .active * { color: #0068b7; }
+#header .main_nav span { font-size: 10px; color: #777; }
+#header .form { width: 176px; display: block; float: right; position: relative; margin-top: 24px; }
+#header .text { width: 166px; height: 26px; line-height: 26px; color: #999; padding-left: 8px; border: 1px solid #bfbfbf; position: absolute; top: 0; left: 0; }
+#header .submit { border: none; width: 26px; height: 26px; position: absolute; top: 1px; right: 1px; cursor: pointer; background: url(../img/index_img/btn_bg.jpg) no-repeat 0 0; }
+
+#footer { width: 1200px; height: 132px; margin: 0 auto; }
+.wrap2 { width: 100%; background: #0068b7; }
+#footer .text { width: 438px; }
+#footer .text p { color: #fff; line-height: 24px; padding-top: 46px; }
+#footer .text p span { padding-left: 21px; }
+#footer .link {}
+#footer .link p { color: #fff; text-align: right; line-height: 24px; font-weight: bold; font-size: 16px; padding-top: 24px; }
+#footer .link a { display: inline-block; width: 114px; text-align: right; color: #fff; line-height: 24px; }
+#footer .link a:hover { text-decoration: underline; }
+
+
+#content { padding-top: 25px; padding-bottom: 111px; }
+.essay { width: 1164px; height: 798px; margin: 0 auto; padding: 0 18px; border: 1px solid #dcdcdc; background: #fff; }
+.essay .header {}
+.essay .header h2 { height: 33px; line-height: 33px; border-bottom: 1px solid #dcdcdc; color: #888; font-size: 14px; font-weight: normal; }
+.essay .header h2 a { color: #888; }
+.essay .header h2 a:hover { text-decoration: underline; }
+.essay .con {}
+.essay .con h1 { text-align: center; font-size: 24px; font-weight: normal; color: #0068b7; padding-top: 35px; }
+.essay .con span { display: block; text-align: center; font-size: 12px; color: #777; padding-top: 16px; }
+.essay .con p { color: #333; text-indent: 36px; line-height: 24px; padding-top: 23px; }

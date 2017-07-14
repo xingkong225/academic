@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* 重置样式 */
+* { margin: 0; padding: 0; }
+em { font-style: normal; }
+li { list-style: none; }
+a { text-decoration: none; }
+img { border: none; vertical-align: top; }
+input, textarea { outline: none; text-decoration: none; }
+body { font-family: "微软雅黑"; font-size: 14px; background: #f6f6f6; }
+/* 公共样式 */
+.fl { float: left; }
+.fr { float: right; }
+.clear { zoom: 1; }
+.clear:after { content: ""; display: block; clear: both; }
+
+#header { width: 1200px; margin: 0 auto; overflow: hidden; }
+.wrap1 { width: 100%; background: #fff; overflow: hidden; }
+#header .img { width: 438px; height: 74px; float: left; }
+#header .img a { display: inline-block; width: 438px; height: 74px; }
+#header .img img { width: 438px; height: 74px; }
+#header .main_nav { float: left; padding: 22px 0 0 0px; }
+#header .main_nav li { float: left; margin-left: 45px; }
+#header .main_nav a { color: #333; line-height: 20px; }
+#header .main_nav li:hover * { color: #0068b7; }
+#header .main_nav span { font-size: 10px; color: #777; }
+#header .form { width: 176px; display: block; float: right; position: relative; margin-top: 24px; }
+#header .text { width: 166px; height: 26px; line-height: 26px; color: #999; padding-left: 8px; border: 1px solid #bfbfbf; position: absolute; top: 0; left: 0; }
+#header .submit { border: none; width: 26px; height: 26px; position: absolute; top: 1px; right: 1px; cursor: pointer; background: url(../img/index_img/btn_bg.jpg) no-repeat 0 0; }
+
+/* banner轮播 */
+#banner { width: 100%; height: 698px; overflow: hidden; position: relative; }
+#banner .imglist { width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+#banner .imglist li { float: left; width: 1920px; height: 698px; position: absolute; top: 0; left: 0; }
+#banner .imglist a { display: inline-block; width: 1920px; height: 698px; }
+#banner .imglist img { width: 100%; height: 698px; }
+#banner .banner_dot { width: 380px; height: 14px; position: absolute; left: 807px; bottom: 20px; z-index: 2; }
+#banner .banner_dot span { display: inline-block; width: 14px; height: 14px; border-radius: 50%; cursor: pointer; background: #eee; margin-right: 34px; }
+#banner .banner_dot span.active { background: #0185f1; }
+#banner .btn { display: inline-block; width: 50px; height: 50px; border: 4px solid #fff; border-radius: 50%; text-align: center; line-height: 50px; font-size: 36px; font-weight: bold; color: #fff; position: absolute; top: 347px; z-index: 2; cursor: pointer; }
+#banner .btn:hover { color: #dfdbdb; }
+#banner .prev { left: 362px; }
+#banner .next { right: 362px; }
+
+#content { width: 1200px; height: auto; margin: 0 auto; padding-top: 30px; }
+#content .notices { height: 181px; }
+#content .notices .notice1, #content .notices .notice2 { float: left; }
+#content .notices .notice1 { margin-right: 42px; }
+#content .notices .notice2 {}
+#content .notices .notice3 { background: #fff; width: 296px; height: 181px; float: right; }
+
+.notice { width: 411px; height: 181px; background: #fff; }
+.notice .header, .notice3 .header { height: 35px; border-bottom: 1px solid #e5e5e5; padding-right: 23px; }
+.notice .header h2, .notice3 .header h2 { height: 35px; line-height: 35px; float: left; font-size: 18px; font-weight: normal; padding-left: 42px; color: #6796cb; }
+.notice .header span, .notice3 .header span { font-size: 14px; color: #777; padding-left: 14px; }
+.notice .header a { display: inline-block; height: 35px; line-height: 35px; color: #777; float: right; }
+.notice ul { padding: 4px 19px 0; }
+.notice li { height: 29px; line-height: 29px; border-bottom: 1px dotted #ececec; }
+.notice li a { color: #333; }
+.notice li a:hover { text-decoration: underline; }
+.notice li span { color: #777; float: right; }
+
+.notice3 ul { padding: 8px 0 0 15px; }
+.notice3 ul li { width: 140px; overflow: hidden; margin-bottom: 15px; float: left; }
+.notice3 ul li img { width: 26px; height: 26px; margin-right: 10px; margin-top: 3px; float: left; }
+.notice3 ul li a { color: #333; font-size: 13px; float: left; }
+.notice3 ul li a:hover { color: #a3a2a2; }
+.notice3 ul li a span { color: #a0a0a0; font-size: 10px; }
+
+.notice1 .header h2 { background: url(../img/index_img/notice_bg1.jpg) no-repeat 18px 11px; }
+.notice2 .header h2 { background: url(../img/index_img/notice_bg2.jpg) no-repeat 20px 10px; }
+.notice3 .header h2 { background: url(../img/index_img/notice_bg3.jpg) no-repeat 15px 8px; }
+
+/* 选项卡的切换 */
+#content .tab { width: 1200px; height: 375px; margin-top: 54px; position: relative; }
+
+#top { position: absolute; top: 0; left: 0; }
+#top a:hover { height: 134px; }
+#top a { display: inline-block; width: 297px; height: 112px; transition: height 0.5s; position: relative; float: left; z-index: 2; }
+#top img { width: 297px; height: 112px; position: absolute; top: 0; left: 0; }
+#top a.bg_1 { background: #00a0e9; margin-right: 4px; }
+#top a.bg_2 { background: #29b9fc; margin-right: 4px; }
+#top a.bg_3 { background: #47c1a8; margin-right: 4px; }
+#top a.bg_4 { background: #13b5b1; }
+
+#bottom { position: absolute; top: 112px; left: 0; }
+#bottom .block { display: none; padding-top: 22px; width: 1200px; height: 241px; }
+#bottom .now { display: block; }
+
+#bottom .tab_1 { background: url(../img/index_img/tab_bg.jpg) no-repeat; }
+#bottom .tab_1 .text { width: 388px; padding-left: 189px; float: left }
+#bottom .tab_1 .text .phone { padding-left: 22px; padding-top: 33px; color: #00a0e9; font-weight: bold; background: url(../img/index_img/phone_bg.jpg) no-repeat 0 36px; }
+#bottom .tab_1 .text .live { color: #777; }
+#bottom .tab_1 .text h3 { width: 143px; height: 56px; margin-top: 17px; margin-bottom: 13px; padding: 17px 0 0 47px; line-height: 20px; float: left; border: 2px solid #00a0e9; margin-right: -2px; color: #00a0e9; font-size: 32px; font-weight: bold; }
+#bottom .tab_1 .text h3 span { color: #777; font-size: 14px; font-weight: normal; }
+#bottom .tab_1 .text .intro { color: #333; line-height: 20px; }
+#bottom .tab_1 .text .intro span { color: #eb6100 }
+#bottom .tab_banner { width: 490px; height: 140px; margin-top: 42px; float: right; position: relative; }
+#bottom .tab_banner .btn { display: block; width: 16px; height: 33px; font-size: 36px; color: #777; position: absolute; top: 52px; }
+#bottom .tab_banner .btn:hover { color: #c2c0c0; }
+#bottom .tab_banner .prev { left: 0; }
+#bottom .tab_banner .next { right: 0; }
+#bottom .tab_banner ul { width: 431px; height: 140px; position: absolute; left: 39px; }
+#bottom .tab_banner li { width: 201px; height: 136px; border: 2px solid #e9e9e9; float: left; margin-right: 10px; }
+#bottom .tab_banner a { display: inline-block; width: 201px; height: 136px; }
+#bottom .tab_banner img { width: 201px; height: 136px; }
+
+#bottom .tab_2 { background: url(../img/index_img/tab_bg2.jpg) no-repeat; }
+#bottom .tab_3 { background: url(../img/index_img/tab_bg3.jpg) no-repeat; }
+#bottom .tab_4 { background: url(../img/index_img/tab_bg4.jpg) no-repeat; }
+
+.service { width: 1200px; height: 280px; margin-top: 42px; }
+.service .header { height: 68px; position: relative; }
+.service .header h3 { width: 100px; }
+.service .header h3 span { font-weight: normal; margin-top: -3px; }
+.service .header span.active { background: #0996d6; }
+.service .header .span1 { font-size: 24px; color: #0068b7; }
+.service .header .span2 { font-size: 14px; color: #777; }
+.service .buttons { position: absolute; left: 114px; top: 32px; }
+.service .buttons span { display: inline-block; width: 10px; height: 10px; background: #777; cursor: pointer; border-radius: 50%; margin-right: 9px; }
+.service .buttons a { display: inline-block; width: 10px; height: 10px; margin-right: 9px; }
+.service .buttons .prev { background: url(../img/index_img/service_a_bg1.jpg) no-repeat; }
+.service .buttons .next { background: url(../img/index_img/service_a_bg2.jpg) no-repeat; }
+.service ul { height: 215px; overflow: hidden; position: relative; }
+.service ul li { float: left; width: 286px; height: 215px; margin-right: 14px; }
+.service li a { display: inline-block; width: 286px; height: 192px; }
+.service li img { width: 286px; height: 192px; }
+.service li span { padding-left: 58px; font-size: 12px; color: #333; position: absolute; bottom: 2px; }
+.service .bg_1 { background: url(../img/index_img/service_bg1.jpg) no-repeat 0 2px; }
+.service .bg_2 { background: url(../img/index_img/service_bg2.jpg) no-repeat 0 2px; }
+.service .bg_3 { background: url(../img/index_img/service_bg3.jpg) no-repeat 0 2px; }
+.service .bg_4 { background: url(../img/index_img/service_bg4.jpg) no-repeat 0 2px; }
+
+.dinner { margin-top: 47px; }
+.dinner .header { padding: 25px 0; }
+.dinner .header h3 { line-height: 27px; font-weight: normal; font-size: 24px; color: #0068b7; }
+.dinner .header span { font-size: 14px; font-weight: normal; color: #999; }
+.cater { width: 587px; }
+.cater .sub_header { width: 587px; height: 74px; padding-bottom: 12px; position: relative; }
+.cater .sub_header p { text-align: center; line-height: 20px; font-size: 18px; color: #333; }
+.cater .sub_header p span { font-size: 10px; color: #999; }
+.cater .sub_header a { display: inline-block; width: 93px; height: 18px; line-height: 18px; position: absolute; left: 237px; margin-top: 8px; text-align: center; border: 1px solid #dcdcdc; border-radius: 3px; background: url(../img/index_img/dinner_banner_more.jpg) no-repeat 73px 0; font-size: 12px; color: #c9c9c9; }
+.dinner_banner { width: 587px; height: 330px; margin-bottom: 16px; position: relative; }
+.dinner_banner ul { width: 587px; height: 330px; position: absolute; top: 0; left: 0; }
+.dinner_banner ul li { width: 587px; height: 330px; position: absolute; top: 0; left: 0; }
+.dinner_banner ul li img { width: 587px; height: 330px; }
+.dinner_banner p { width: 274px; height: 36px; text-align: right; line-height: 18px; padding-right: 10px; padding-top: 8px; z-index: 3; background: #fff; position: absolute; right: 0; bottom: 0; }
+.dinner_banner p .span1 { font-size: 16px; color: #555; }
+.dinner_banner p .span2 { font-size: 10px; color: #999; }
+.dinner_banner .btn { display: block; width: 19px; height: 36px; position: absolute; top: 166px; z-index: 3; }
+.dinner_banner .prev { left: 12px; background: url(../img/index_img/dinner_prev.png) no-repeat; }
+.dinner_banner .next { right: 12px; background: url(../img/index_img/dinner_next.png) no-repeat; }
+
+.cater ol {}
+.cater ol li { width: 284px; height: 204px; float: left; margin-bottom: 17px; position: relative; }
+.cater ol li a {}
+.cater ol li img { width: 284px; height: 159px; float: left; }
+.cater ol p { width: 274px; height: 40px; padding-right: 10px; padding-top: 5px; text-align: right; line-height: 18px; position: absolute; bottom: 0; background: #fff; font-size: 16px; color: #555; }
+.cater ol p span { font-size: 10px; color: #999; }
+.cater .fu{ margin-right: 17px; }
+
+
+.employ { margin-top: 45px; padding-bottom: 130px; }
+.employ .header { padding: 25px 0; }
+.employ .header h3 { line-height: 27px; font-weight: normal; font-size: 24px; color: #0068b7; }
+.employ .header span { font-size: 14px; font-weight: normal; color: #999; }
+.information {}
+.information li { width: 268px; height: 171px; position: relative; border: 1px solid #d9d9d9; float: left; margin-right: 21px; background: #fff; padding: 10px 0 0 14px; }
+.information li.more { margin: 0; padding: 0; width: 282px; height: 181px; }
+.information li.more a {}
+.information li.more img { width: 282px; height: 181px; }
+.information p { color: #0068b7; line-height: 22px; }
+.information span { color: #333; }
+.information .top { margin-bottom: 18px; }
+.information .bottom span { line-height: 25px; }
+.information li:hover { border: 1px solid #0068b7; }
+.information li:hover .btn { display: inline-block; }
+.information li .btn { display: none; width: 10px; height: 18px; position: absolute; top: 82px; right: 14px; background: url(../img/index_img/employ_btn.jpg) no-repeat; }
+
+
+#footer { width: 1200px; height: 132px; margin: 0 auto; }
+.wrap2 { width: 100%; background: #0068b7; }
+#footer .text { width: 438px; }
+#footer .text p { color: #fff; line-height: 24px; padding-top: 46px; }
+#footer .text p span { padding-left: 21px; }
+#footer .link {}
+#footer .link p { color: #fff; text-align: right; line-height: 24px; font-weight: bold; font-size: 16px; padding-top: 24px; }
+#footer .link a { display: inline-block; width: 114px; text-align: right; color: #fff; line-height: 24px; }
+#footer .link a:hover { text-decoration: underline; }
